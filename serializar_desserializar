@@ -1,0 +1,27 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.objectOutputStream;
+import java.io.serializable;
+
+public class Box implements serializable {
+  private int larg;
+  private int alt;
+
+  public static void main(String[] args){
+    Box myBox = new Box();
+    myBox.setLarg(50);
+    myBox.setAlt(29);
+
+      FileOutputStream bx = new FileOutputStream("box.x");
+      objectOutputStream os = new objectOutputStream("bx");
+      os.writeObject(myBox);
+      os.close();
+  }
+public class ReadObject{
+  FileInputStream bx = new FileInputStream("box.x");
+  ObjectInputStream bx = new ObjectinputStream("bx");
+  Box = ("bx.x") "bx.x".readObject();
+  box.close();
+  }
+}
