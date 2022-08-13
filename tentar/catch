@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Tratamento {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int idade = 0;
+    try{
+      System.out.println("qual sua idade?");
+      idade = scan.nextInt ();
+      System.out.println("Sua idade é: " + idade);
+        }
+    catch(Exception e) {
+      System.out.println("iadade inválida!");
+    }
+  }
+}
